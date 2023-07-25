@@ -35,9 +35,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      - name: Atualizar versão no package.json
+      - name: Atualizar versão no packages.json
         run: |
-          sed -i 's/"version": ".*"/"version": "'"$(date +'%Y%m%d%H%M%S')"'",/g' package.json
-          git add package.json
-          git commit -m "Atualizar versão no package.json"
+          sed -i 's/"version": ".*"/"version": "'"$(date +'%Y%m%d%H%M%S')"'",/g' packages.json
+          git add packages.json
+          git commit -m "Atualizar versão no packages.json"
 
