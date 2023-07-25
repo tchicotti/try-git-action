@@ -45,4 +45,5 @@ jobs:
           sed -i 's/"version": ".*"/"version": "'"$(date +'%Y%m%d%H%M%S')"'",/g' packages.json
           git add packages.json
           git commit -m "Atualizar versão no packages.json"
+          git push
 
