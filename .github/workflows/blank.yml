@@ -34,6 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      - name: Set up Git
+        run: |
+          git config --global user.email "tchicotti@gmail.com"
+          git config --global user.name "Tafarel Chicotti"
 
       - name: Atualizar versão no packages.json
         run: |
